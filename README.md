@@ -5,20 +5,20 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* rails new devise-api --api
 
-* System dependencies
+* bundle add devise devise-api
 
-* Configuration
+* rails g devise:install && rails g devise user
 
-* Database creation
+* rails g devise_api:install
 
-* Database initialization
+* initializers -> cors.rb -> uncomment
 
-* How to run the test suite
+* gemfile -> uncomment cors
 
-* Services (job queues, cache servers, search engines, etc.)
+* bundle
 
-* Deployment instructions
+* rails g controller pages home restricted
 
-* ...
+* model/user.rb add ':api'
